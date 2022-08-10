@@ -76,6 +76,7 @@ ul {
         overflow-y: auto;
         width: 100%;
         margin: 0;
+        height: auto;
 
         left: 100%;
         transition: left 0.3s;
@@ -90,4 +91,21 @@ ul {
         left: 0;
     }
 
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container ul{
+    background-color: brown;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    max-height: 0px;
+}
+
+.dropdown-container ul.show{
+    max-height: 400px;
+    transition: max-height 1s;
 }

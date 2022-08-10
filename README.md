@@ -64,6 +64,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 I learn about that when use media querys, for change a css rule its necesary access to that rule in the same way we use before.
 I learn use of the property "defer" from the script tag to load a js file.
+I learn to put transition on the end component if I want only to show the animation only when displayed
+
 -----------------------------------------
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
