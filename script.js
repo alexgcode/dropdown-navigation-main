@@ -1,6 +1,6 @@
 //navbar section
 const toggle = document.querySelector(".toggle");
-const navbarMenu = document.querySelector(".navbar-menu");
+const navbarMenu = document.querySelector(".navbar");
 
 toggle.addEventListener("click", () => {
     navbarMenu.classList.toggle("navbar-menu-active");
@@ -8,11 +8,6 @@ toggle.addEventListener("click", () => {
 
 
 //dropdown section
-
-/*document.querySelector(".dropdown-container").addEventListener("click", function(){
-    document.querySelector(".dropdown-container ul").classList.toggle("show");
-});
-*/
 
 document.querySelectorAll(".dropdown-container").forEach(function(dropdown){
     dropdown.addEventListener("click", function(){

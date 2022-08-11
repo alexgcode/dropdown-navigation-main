@@ -18,14 +18,20 @@ ul {
     list-style: none;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+}
+
 .navbar {
+    flex-grow: 3;
     background-color: aqua;
     display: flex;
     justify-content: space-between;
     height: 60px;
 }
 
-.navbar .toggle {
+.toggle {
     background: none;
     border: none;
     display: none;
@@ -47,11 +53,18 @@ ul {
     cursor: pointer;
 }
 
-.navbar-buttons li {
-    background-color: darkolivegreen;
+.navbar-buttons li{
+    background-color: gray;
     margin: 0 10px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
+.btn-registrer {
+    border-radius: 10px;
+    border: black solid 1px;
+}
 
 .attribution { 
     font-size: 11px; 
@@ -64,13 +77,15 @@ ul {
 
 @media (max-width:768px) {
 
-    .navbar {
-        flex-wrap: wrap;
+    .header {
+        height: 60px;
+        background-color: blue;
+        display: flex;
+        justify-content: space-between;
     }
-    
-    .navbar-menu {
+
+    .navbar {
         flex-direction: column;
-        align-items: center;
         position: fixed;
         top: 60px;
         overflow-y: auto;
@@ -81,8 +96,18 @@ ul {
         left: 100%;
         transition: left 0.3s;
     }
+    
+    .navbar-menu {
+        flex-direction: column;
+        align-self: flex-start;
+    }
 
-    .navbar .toggle {
+    .navbar-buttons {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .toggle {
         display: block;
         cursor: pointer;
     }
@@ -108,4 +133,8 @@ ul {
 .dropdown-container ul.show{
     max-height: 400px;
     transition: max-height 1s;
+}
+
+.btn-registrer {
+
 }
