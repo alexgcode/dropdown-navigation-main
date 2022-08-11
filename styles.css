@@ -37,6 +37,12 @@ ul {
     display: none;
 }
 
+.close-menu {
+    background: none;
+    border: none;
+    display: none;
+}
+
 .navbar-buttons,
 .navbar-menu {
     background-color: coral;
@@ -86,12 +92,13 @@ ul {
 
     .navbar {
         flex-direction: column;
+        justify-content: start;
         position: fixed;
-        top: 60px;
+        top: 0;
         overflow-y: auto;
-        width: 100%;
+        width: 70%;
         margin: 0;
-        height: auto;
+        height: 100%;
 
         left: 100%;
         transition: left 0.3s;
@@ -107,13 +114,18 @@ ul {
         align-self: center;
     }
 
+    .close-menu,
     .toggle {
         display: block;
         cursor: pointer;
     }
 
+    .close-menu {
+        align-self: flex-end;
+    }
+
     .navbar-menu-active {
-        left: 0;
+        left:30%;
     }
 
 }
@@ -133,8 +145,4 @@ ul {
 .dropdown-container ul.show{
     max-height: 400px;
     transition: max-height 1s;
-}
-
-.btn-registrer {
-
 }
