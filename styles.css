@@ -74,6 +74,20 @@ ul {
     border: black solid 1px;
 }
 
+.dropdown-container ul{
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    overflow: hidden;
+    padding: 0;
+    max-height: 0px;
+}
+
+.dropdown-container ul.show{
+    max-height: 400px;
+    transition: max-height 1s;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -120,6 +134,7 @@ ul {
         flex-direction: column;
         align-self: flex-start;
         align-items: flex-start;
+        height: 300px;
     }
 
     .navbar-buttons {
@@ -149,22 +164,9 @@ ul {
         left:30%;
     }
 
+    .dropdown-container ul{
+        position: static;
+    }
 }
 
-.dropdown-container {
-    position: relative;
-}
 
-.dropdown-container ul{
-    background-color: white;
-    border-radius: 10px;
-    position: absolute;
-    overflow: hidden;
-    padding: 0;
-    max-height: 0px;
-}
-
-.dropdown-container ul.show{
-    max-height: 400px;
-    transition: max-height 1s;
-}
