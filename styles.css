@@ -23,6 +23,51 @@ ul {
 .header {
     display: flex;
     align-items: center;
+    height: 10vh;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.footer {
+    height: 10vh;
+}
+
+main section{
+    width: 50%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container img{
+    display: block;
+    margin: auto;
+}
+
+main section img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-size: 80px;
+    color: black;
+    font-weight: 700;
+}
+
+p {
+    font-size: var(--paragraph-font-size);
+}
+
+.text-container button {
+    max-width: 150px;
 }
 
 .navbar {
@@ -97,6 +142,8 @@ ul {
     color: hsl(228, 45%, 44%); 
 }
 
+
+
 @media (max-width:768px) {
 
     .header {
@@ -168,5 +215,3 @@ ul {
         position: static;
     }
 }
-
-
