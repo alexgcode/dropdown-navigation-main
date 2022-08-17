@@ -30,11 +30,11 @@ main {
     height: 80vh;
     display: flex;
     justify-content: center;
-    margin: 2%;
+    margin: 2.5vh 2.5vw 2.5vh 7vw;
 }
 
-.footer {
-    height: 10vh;
+footer {
+    height: 5vh;
 }
 
 main section{
@@ -44,6 +44,32 @@ main section{
 .text-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-container h1, button {
+    margin: 0px 35px;
+}
+
+.text-container .clients {
+    margin: 0px 6vw 0px 35px;
+}
+
+.clients {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clients img {
+    height: fit-content;
+}
+
+
+.text-container p {
+    text-align: justify;
+    margin: 0px 180px 0px 40px ;
+    font-size: var(--paragraph-font-size);
 }
 
 .img-container img{
@@ -57,13 +83,13 @@ main section img{
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 95px;
     color: black;
     font-weight: 700;
 }
 
-p {
-    font-size: var(--paragraph-font-size);
+.img-logo {
+    padding: 0px 30px;
 }
 
 .text-container button {
@@ -100,7 +126,7 @@ p {
 }
 
 .navbar-menu li {
-    margin: 5px;
+    margin: 5px 20px;
     padding: 0px;
     font-size: 12px;
     cursor: pointer;
