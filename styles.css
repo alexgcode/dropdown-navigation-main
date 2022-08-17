@@ -132,10 +132,13 @@ h1 {
     cursor: pointer;
 }
 
+.navbar-buttons {
+    margin-right: 30px;
+}
+
 .navbar-buttons li{
-    background-color: grey;
     margin: 0 10px;
-    padding: 5px 15px;
+    padding: 10px 20px;
     font-size: 12px;
     cursor: pointer;
 }
