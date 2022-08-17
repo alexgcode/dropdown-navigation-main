@@ -27,14 +27,16 @@ ul {
 }
 
 main {
-    height: 80vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     margin: 2.5vh 2.5vw 2.5vh 7vw;
 }
 
 footer {
-    height: 5vh;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
 }
 
 main section{
