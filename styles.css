@@ -29,6 +29,7 @@ ul {
 main {
     height: 75vh;
     display: flex;
+    flex-flow: row-reverse;
     justify-content: center;
     margin: 2.5vh 2.5vw 2.5vh 7vw;
 }
@@ -74,11 +75,6 @@ main section{
     font-size: var(--paragraph-font-size);
 }
 
-.img-container img{
-    display: block;
-    margin: auto;
-}
-
 main section img{
     max-width: 100%;
     max-height: 100%;
@@ -92,6 +88,16 @@ h1 {
 
 .img-logo {
     padding: 0px 30px;
+}
+
+.img-desktop {
+    display: block;
+    margin: auto;
+}
+
+.img-mobile {
+    display: none;
+    margin: auto;
 }
 
 .text-container button {
@@ -209,6 +215,7 @@ h1 {
         width: 70%;
         margin: 0;
         height: 100%;
+        z-index: 500;
 
         left: 100%;
         transition: left 0.3s;
@@ -239,6 +246,52 @@ h1 {
         height: 20px;
     }
 
+    .img-desktop {
+        display: none;
+    }
+    
+    .img-mobile {
+        display: block;
+        max-width:100%;
+        max-height:100%;
+    }
+
+    main {
+        height: fit-content;
+        flex-flow: column;
+        margin: 0;
+    }
+
+    .img-container {
+        width: auto;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .text-container h1{
+        margin: 20px 10px 10px 10px;
+        padding: 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .text-container p,button{
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .text-container button {
+        align-self: center;
+    }
+
+    .text-container .clients{
+        margin: 10px;
+        padding: 0;
+    }
+    
     .close-menu,
     .toggle {
         display: block;
@@ -259,5 +312,11 @@ h1 {
 
     .dropdown-container ul{
         position: static;
+    }
+    footer {
+        height: 5vh;
+        line-height: 5vh;
+        margin: 0;
+        text-align: center;
     }
 }
