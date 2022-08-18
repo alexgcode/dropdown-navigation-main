@@ -214,11 +214,15 @@ h1 {
         overflow-y: auto;
         width: 70%;
         margin: 0;
-        height: 100%;
+        height: 100%;/*calc(100% - 60px); */
         z-index: 500;
 
         left: 100%;
         transition: left 0.3s;
+    }
+
+    .navbar-active {
+        left:30%;
     }
 
     .navbar-menu,
@@ -304,10 +308,6 @@ h1 {
 
     .close-menu {
         align-self: flex-end;
-    }
-
-    .navbar-menu-active {
-        left:30%;
     }
 
     .dropdown-container ul{
