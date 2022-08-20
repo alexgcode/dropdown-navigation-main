@@ -50,12 +50,8 @@ main section{
     justify-content: space-between;
 }
 
-.text-container h1, button {
-    margin: 0px 35px;
-}
-
 .text-container .clients {
-    margin: 0px 6vw 0px 35px;
+    margin: 0px 7vw 0px 0;
 }
 
 .clients {
@@ -69,9 +65,9 @@ main section{
 }
 
 
-.text-container p {
+.text-container .text p {
     text-align: justify;
-    margin: 0px 180px 0px 40px ;
+    margin: 20px 180px 20px 0;
     font-size: var(--paragraph-font-size);
 }
 
@@ -80,8 +76,20 @@ main section img{
     max-height: 100%;
 }
 
+.text {
+    margin-top: 70px;
+}
+
+.text h1 {
+    margin: 40px 40px 20px 0;
+}
+
+.text button {
+    margin: 20px 0;
+}
+
 h1 {
-    font-size: 95px;
+    font-size: 80px;
     color: black;
     font-weight: 700;
 }
@@ -136,7 +144,7 @@ h1 {
 .navbar-menu li {
     margin: 5px 20px;
     padding: 0px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     cursor: pointer;
 }
@@ -148,7 +156,7 @@ h1 {
 .navbar-buttons li{
     margin: 0 10px;
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 700;
     cursor: pointer;
 }
