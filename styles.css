@@ -137,6 +137,7 @@ h1 {
     margin: 5px 20px;
     padding: 0px;
     font-size: 12px;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -148,6 +149,7 @@ h1 {
     margin: 0 10px;
     padding: 10px 20px;
     font-size: 12px;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -206,6 +208,7 @@ h1 {
     color: white;
     border-radius: 10px;
     padding: 10px 20px;
+    font-size: 18px;
 }
 
 .text-container button:hover{
